@@ -36,6 +36,8 @@
 <meta name="twitter:image" content="https://s2.loli.net/2024/07/16/dEsTA6PDwg78txl.png">
   
   
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
   
   <title>Scoop：开源的Windows包管理工具 - 阿伟の折腾笔记</title>
 
@@ -482,20 +484,20 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
     <div class="license-meta">
       
         <div class="license-meta-item">
-          <div>Aŭtoro</div>
+          <div>Author</div>
           <div>AW</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Postigita</div>
+          <div>Posted on</div>
           <div>2024年7月17日</div>
         </div>
       
       
       
         <div class="license-meta-item">
-          <div>Lizenta</div>
+          <div>Licensed under</div>
           <div>
             
               
@@ -524,7 +526,7 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
                       <a href="/2024/07/18/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" title="Hexo+GitHub-免费托管私人博客">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Hexo+GitHub-免费托管私人博客</span>
-                        <span class="visible-mobile">Antaŭa afiŝo</span>
+                        <span class="visible-mobile">Previous</span>
                       </a>
                     
                   </article>
@@ -548,7 +550,7 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
     <div id="toc">
   <p class="toc-header">
     <i class="iconfont icon-list"></i>
-    <span>Enhavtabelo</span>
+    <span>Table of Contents</span>
   </p>
   <div class="toc-body" id="toc-body"></div>
 </div>
@@ -604,7 +606,7 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Serĉi</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -612,7 +614,7 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">ŝlosivorto</label>
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -623,13 +625,19 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
     
 
     
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+           <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+        </div>
+      </div>
+    
   </main>
 
   <footer>
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
     </div>
   
   
@@ -639,21 +647,20 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
 
   
     
-      <span id="leancloud-site-pv-container" style="display: none">
+      <span id="busuanzi_container_site_pv" style="display: none">
         总访问量 
-        <span id="leancloud-site-pv"></span>
+        <span id="busuanzi_value_site_pv"></span>
          次
       </span>
     
     
-      <span id="leancloud-site-uv-container" style="display: none">
+      <span id="busuanzi_container_site_uv" style="display: none">
         总访客数 
-        <span id="leancloud-site-uv"></span>
+        <span id="busuanzi_value_site_uv"></span>
          人
       </span>
     
     
-
   
 </div>
 
@@ -806,7 +813,7 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
 
   <script  src="/js/local-search.js" ></script>
 
-  <script defer src="/js/leancloud.js" ></script>
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
@@ -827,7 +834,7 @@ which       Locate a shim/executable <span class="token punctuation">(</span>sim
   
 
   <noscript>
-    <div class="noscript-warning">Blogo funkcias plej bone kun JavaScript ebligita</div>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
   </noscript>
 </body>
 </html>

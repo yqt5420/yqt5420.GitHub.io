@@ -27,6 +27,8 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
   
   <title>阿伟の折腾笔记</title>
 
@@ -406,7 +408,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Serĉi</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -414,7 +416,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">ŝlosivorto</label>
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -425,13 +427,19 @@
     
 
     
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+           <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+        </div>
+      </div>
+    
   </main>
 
   <footer>
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
     </div>
   
   
@@ -441,21 +449,20 @@
 
   
     
-      <span id="leancloud-site-pv-container" style="display: none">
+      <span id="busuanzi_container_site_pv" style="display: none">
         总访问量 
-        <span id="leancloud-site-pv"></span>
+        <span id="busuanzi_value_site_pv"></span>
          次
       </span>
     
     
-      <span id="leancloud-site-uv-container" style="display: none">
+      <span id="busuanzi_container_site_uv" style="display: none">
         总访客数 
-        <span id="leancloud-site-uv"></span>
+        <span id="busuanzi_value_site_uv"></span>
          人
       </span>
     
     
-
   
 </div>
 
@@ -543,7 +550,7 @@
 
   <script  src="/js/local-search.js" ></script>
 
-  <script defer src="/js/leancloud.js" ></script>
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
@@ -564,7 +571,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">Blogo funkcias plej bone kun JavaScript ebligita</div>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
   </noscript>
 </body>
 </html>
