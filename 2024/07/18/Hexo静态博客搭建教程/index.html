@@ -1,0 +1,1065 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/favicon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="AW">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="使用Hexo+GitHub免费托管私人博客Hexo中文wiki：[点我](文档 | Hexo) fluid主题：点我 一、生成GitHub Pages静态页面1、创建仓库 自行注册、登录GitHub账号，点我新建仓库，名称随意后缀是GitHub.io就行，例如：yqt5420.GitHub.io这玩意以后也就是博客的网址，记得勾上Add a README file，看图：  创建完成后，不出意外的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+GitHub-免费托管私人博客">
+<meta property="og:url" content="https://yqt5420.github.io/2024/07/18/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="阿伟の折腾笔记">
+<meta property="og:description" content="使用Hexo+GitHub免费托管私人博客Hexo中文wiki：[点我](文档 | Hexo) fluid主题：点我 一、生成GitHub Pages静态页面1、创建仓库 自行注册、登录GitHub账号，点我新建仓库，名称随意后缀是GitHub.io就行，例如：yqt5420.GitHub.io这玩意以后也就是博客的网址，记得勾上Add a README file，看图：  创建完成后，不出意外的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/07/17/OqzS1uc2Aog9m4p.png">
+<meta property="og:image" content="https://s2.loli.net/2024/07/17/WHzKs72PR9coSZY.png">
+<meta property="og:image" content="https://s2.loli.net/2024/07/17/YwtHPdfNpFUWa67.png">
+<meta property="og:image" content="https://s2.loli.net/2024/07/18/4crayv8mYOxCJb7.png">
+<meta property="og:image" content="https://s2.loli.net/2024/07/18/9JUZGqD7bCop83Q.png">
+<meta property="article:published_time" content="2024-07-18T02:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-18T06:22:24.446Z">
+<meta property="article:author" content="AW">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s2.loli.net/2024/07/17/OqzS1uc2Aog9m4p.png">
+  
+  
+  
+  <title>Hexo+GitHub-免费托管私人博客 - 阿伟の折腾笔记</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_3846514_kabxni94auf.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yqt5420.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loadings.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"b03373c2e14581acbc0f537ef1c1d05a","google":null,"tencent":{"sid":null,"cid":null},"woyaola":"21899037","cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?b03373c2e14581acbc0f537ef1c1d05a";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+    <!-- 51.la Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript('//js.users.51.la/21899037.js');
+      }
+    </script>
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>阿伟の折腾笔记</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives" target="_self">
+                <i class="iconfont icon-books"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-book"></i>
+                <span>文档</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="https://hexo.fluid-dev.com/" target="_self">
+                    
+                    <span>主题博客</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="https://hexo.fluid-dev.com/docs/guide/" target="_self">
+                    
+                    <span>配置指南</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="https://hexo.fluid-dev.com/docs/icon/" target="_self">
+                    
+                    <span>图标用法</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Hexo+GitHub-免费托管私人博客"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        AW
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-07-18 10:00" pubdate>
+           2024 年 07 月 18 日 , 上午 10:00 , 星期四
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          <!-- compatible with older versions-->
+          2.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          <!-- compatible with older versions-->
+          18 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Hexo+GitHub-免费托管私人博客</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="使用Hexo-GitHub免费托管私人博客"><a href="#使用Hexo-GitHub免费托管私人博客" class="headerlink" title="使用Hexo+GitHub免费托管私人博客"></a>使用Hexo+GitHub免费托管私人博客</h2><p>Hexo中文wiki：[点我](<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">文档 | Hexo</a>)</p>
+<p>fluid主题：<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/start/#%E4%B8%BB%E9%A2%98%E7%AE%80%E4%BB%8B">点我</a></p>
+<h3 id="一、生成GitHub-Pages静态页面"><a href="#一、生成GitHub-Pages静态页面" class="headerlink" title="一、生成GitHub Pages静态页面"></a>一、生成GitHub Pages静态页面</h3><p>1、创建仓库</p>
+<p>自行注册、登录GitHub账号，<a target="_blank" rel="noopener" href="https://github.com/new">点我</a>新建仓库，名称随意后缀是<code>GitHub.io</code>就行，例如：<code>yqt5420.GitHub.io</code><em><strong>这玩意以后也就是博客的网址</strong></em>，记得勾上<code>Add a README file</code>，看图：</p>
+<p><img src="https://s2.loli.net/2024/07/17/OqzS1uc2Aog9m4p.png" srcset="/img/loadings.gif" lazyload alt="新建仓库"></p>
+<p>创建完成后，不出意外的话<code>你的名称.GitHub.com</code>就能够访问了，GitHub静态页面就完成了。</p>
+<h3 id="二、通过ssh链接GitHub仓库"><a href="#二、通过ssh链接GitHub仓库" class="headerlink" title="二、通过ssh链接GitHub仓库"></a>二、通过ssh链接GitHub仓库</h3><p>1、安装<code>git</code>工具，使用<code>scoop</code>一键安装，或者去百度搜安装包</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">scoop install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>2、生成<code>ssh</code>密钥对（公钥和私钥）</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">ssh-keygen <span class="token operator">-</span>t rsa  <span class="token comment">#一路回车就行</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>生成的密钥对存放<code>当前用户/.ssh</code>目录下，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥</p>
+<p><img src="https://s2.loli.net/2024/07/17/WHzKs72PR9coSZY.png" srcset="/img/loadings.gif" lazyload alt="密钥对存放目录"></p>
+<p>3、设置git提交的用户名和邮箱</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token string">"你的 GitHub 用户名"</span>
+git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token string">"你的 GitHub 邮箱"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div></figure>
+
+<p>4、用记事本打开<code>第2步</code>中生成的公钥<code>id_rsa.pub</code>，复制所有内容，打开GitHub网站，点击头像 —-&gt; <code>setting</code>  —-&gt; <code>SSH and GPG keys</code> —-&gt; <code>New SSH key</code> 粘贴进去，然后保存，看图：</p>
+<p><img src="https://s2.loli.net/2024/07/17/YwtHPdfNpFUWa67.png" srcset="/img/loadings.gif" lazyload alt="添加公钥"></p>
+<p>5、通过ssh链接GitHub仓库</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">ssh <span class="token operator">-</span>T git@github<span class="token punctuation">.</span>com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>第一次链接会出现 “Are you sure……”，输入 yes 回车确认。</p>
+<p>有<code>successful</code>的字样出现就是链接成功。</p>
+<p>6、设置GitHub仓库的page分支</p>
+<p><img src="https://s2.loli.net/2024/07/18/4crayv8mYOxCJb7.png" srcset="/img/loadings.gif" lazyload alt="仓库分支"></p>
+<h3 id="三、安装Hexo程序"><a href="#三、安装Hexo程序" class="headerlink" title="三、安装Hexo程序"></a>三、安装<code>Hexo</code>程序</h3><p>1、安装<code>node</code>，使用<code>scoop</code>安装或者百度搜安装包</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">scoop install node<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>2、通过node安装Hexo程序</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">-</span>g hexo-<span class="token function">cli</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>如果网络环境不好就使用淘宝镜像源</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">-</span>g hexo-<span class="token function">cli</span> <span class="token operator">--</span>registry=https:<span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npmmirror<span class="token punctuation">.</span>com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>3、随便新建一个文件夹，然后在这个目录下打开cmd命令行，输入<code>hexo init</code>创建新博客（网络不好的话要等好久），新建一个文件<code>_config.fluid.yml</code>用来配置fluid主题（后面再讲）。<img src="https://s2.loli.net/2024/07/18/9JUZGqD7bCop83Q.png" srcset="/img/loadings.gif" lazyload alt="目录结构"></p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">hexo init 
+hexo s           <span class="token comment">#本地启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div></figure>
+
+<p>3.1 使用fluid主题</p>
+<p>fluid官方文档：<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E6%8C%87%E5%8D%97">点我</a> </p>
+<p>通过npm安装，还是在刚才随便新建的目录下，运行安装命令：</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">--</span>save hexo-theme-fluid<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>新建博客里的<code>关于</code>页面（用不上也可以不管）</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">hexo new page about<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p><strong>打开博客配置文件<code>_config.yml</code>修改主题字段为<code>fluid</code></strong></p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">theme</span><span class="token punctuation">:</span> fluid  <span class="token comment"># 指定主题</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>3.2 配置fluid主题</p>
+<p>详细的配置，去看官方文档说明：<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E6%8C%87%E5%8D%97">点我</a> </p>
+<p>下面是我自己使用的配置，打开之前新建的<code>_config.fluid.yml</code>文件，写入以下内容：</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># ==================================== 全局设置 ====================================</span>
+
+<span class="token comment">## 顶部预览大图（不知道为什么，设置这个属性貌似没起到作用）</span>
+<span class="token key atrule">banner_img</span><span class="token punctuation">:</span> 你的图片地址/链接
+
+<span class="token comment">## Hexo的网页图标</span>
+<span class="token key atrule">favicon</span><span class="token punctuation">:</span> /img/favicon.jpg
+
+<span class="token comment">## 是否强制全局HTTPS</span>
+<span class="token key atrule">force_https</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment">## 自定义JS</span>
+<span class="token key atrule">custom_js</span><span class="token punctuation">:</span>
+  <span class="token comment">### 鼠标点击出小爱心❤</span>
+  <span class="token punctuation">-</span> //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/love.js
+  <span class="token comment">### 鼠标跟随小星星</span>
+  <span class="token punctuation">-</span> //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxingxing.js
+  <span class="token comment">### 小雪花飘落</span>
+  <span class="token punctuation">-</span> //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxuehua.js
+  <span class="token comment">### 动态彩带</span>
+  <span class="token punctuation">-</span> //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js
+
+<span class="token comment">## 自定义CSS</span>
+<span class="token key atrule">custom_css</span><span class="token punctuation">:</span> 
+  <span class="token comment">### 引入 iconfont 的图标（这是我的iconfont项目链接，最好可以换成你自己的）</span>
+  <span class="token punctuation">-</span> //at.alicdn.com/t/c/font_3846514_kabxni94auf.css
+  <span class="token comment">### 鼠标指针美化</span>
+  <span class="token punctuation">-</span> //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css
+  <span class="token comment">### 滚动条美化</span>
+  <span class="token punctuation">-</span> //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css
+
+<span class="token comment">## 暗黑模式设置</span>
+<span class="token key atrule">dark_mode</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">default</span><span class="token punctuation">:</span> auto
+
+<span class="token comment">## 导航栏设置</span>
+<span class="token key atrule">navbar</span><span class="token punctuation">:</span>
+  <span class="token comment">### 博客标题</span>
+  <span class="token key atrule">blog_title</span><span class="token punctuation">:</span> 阿伟の折腾笔记
+  <span class="token comment">### 导航菜单</span>
+  <span class="token key atrule">menu</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-home-fill'</span> <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">'归档'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'/archives'</span><span class="token punctuation">,</span> <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-books'</span> <span class="token punctuation">&#125;</span>
+    <span class="token comment"># - &#123; key: '分类', link: '/categories', icon: 'iconfont icon-th-large'&#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">'标签'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'/tags/'</span><span class="token punctuation">,</span> <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-tags-fill'</span><span class="token punctuation">&#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">'关于'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'/about/'</span><span class="token punctuation">,</span> <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-user-fill'</span><span class="token punctuation">&#125;</span>
+    <span class="token comment"># - &#123; key: '友链', link: '/links/', icon: 'iconfont icon-link-fill' &#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span>
+      <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">'文档'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-book'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">submenu</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">&#123;</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">'主题博客'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'https://hexo.fluid-dev.com/'</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">'配置指南'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'https://hexo.fluid-dev.com/docs/guide/'</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">'图标用法'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'https://hexo.fluid-dev.com/docs/icon/'</span> <span class="token punctuation">&#125;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">&#125;</span>
+
+<span class="token comment">## 关于页设置</span>
+<span class="token key atrule">about</span><span class="token punctuation">:</span>
+  <span class="token comment">## 关于页的顶部预览图</span>
+  <span class="token key atrule">banner_img</span><span class="token punctuation">:</span> 你的图片地址/链接
+  <span class="token comment">### 你的头像</span>
+  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> /img/favicon.jpg
+  <span class="token comment">### 你的昵称</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token string">"AW"</span>
+  <span class="token comment">### 个人简介</span>
+  <span class="token key atrule">intro</span><span class="token punctuation">:</span> <span class="token string">"一起学习，一起进步"</span>
+  <span class="token comment">### 外链设置</span>
+  <span class="token key atrule">icons</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">class</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-GitHub-fill'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'你的链接'</span><span class="token punctuation">,</span> <span class="token key atrule">tip</span><span class="token punctuation">:</span> <span class="token string">'GitHub'</span> <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">class</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-gitee-fill-round'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'你的链接'</span><span class="token punctuation">,</span> <span class="token key atrule">tip</span><span class="token punctuation">:</span> <span class="token string">'Gitee'</span> <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">class</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-csdn'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'你的链接'</span><span class="token punctuation">,</span> <span class="token key atrule">tip</span><span class="token punctuation">:</span> <span class="token string">'CSDN'</span> <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">class</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-qq'</span><span class="token punctuation">,</span> <span class="token key atrule">qrcode</span><span class="token punctuation">:</span> <span class="token string">'你的链接'</span> <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span> <span class="token key atrule">class</span><span class="token punctuation">:</span> <span class="token string">'iconfont icon-weixin'</span><span class="token punctuation">,</span> <span class="token key atrule">qrcode</span><span class="token punctuation">:</span> <span class="token string">'你的链接'</span> <span class="token punctuation">&#125;</span>
+
+<span class="token comment">## 友情链接页设置</span>
+<span class="token key atrule">links</span><span class="token punctuation">:</span>
+  <span class="token comment">### 友情链接页的顶部预览图</span>
+  <span class="token key atrule">banner_img</span><span class="token punctuation">:</span> 你的图片地址/链接
+  <span class="token key atrule">items</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span>
+      <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">'AW'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">intro</span><span class="token punctuation">:</span> <span class="token string">'AW 的 Blog'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'你的链接'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">avatar</span><span class="token punctuation">:</span> <span class="token string">'你的链接'</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">&#123;</span>
+      <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">'Fluid Docs'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">intro</span><span class="token punctuation">:</span> <span class="token string">'Fluid 主题使用指南'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'https://hexo.fluid-dev.com/docs/'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">avatar</span><span class="token punctuation">:</span> <span class="token string">'/img/favicon.png'</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token comment">### 默认头像</span>
+  <span class="token key atrule">default_avatar</span><span class="token punctuation">:</span> /img/favicon.jpg
+
+<span class="token comment">## 标签页设置</span>
+<span class="token key atrule">tag</span><span class="token punctuation">:</span>
+  <span class="token comment">### 标签页的顶部预览图</span>
+  <span class="token key atrule">banner_img</span><span class="token punctuation">:</span> /img/back.jpg
+  
+<span class="token comment">## 分类页设置</span>
+<span class="token key atrule">category</span><span class="token punctuation">:</span>
+  <span class="token comment">### 分类页的顶部预览图</span>
+  <span class="token key atrule">banner_img</span><span class="token punctuation">:</span> /img/back.jpg
+  
+<span class="token comment">## 归档页设置</span>
+<span class="token key atrule">archive</span><span class="token punctuation">:</span>
+  <span class="token comment">### 归档页的顶部预览图</span>
+  <span class="token key atrule">banner_img</span><span class="token punctuation">:</span> /img/back.jpg
+
+<span class="token comment">## 懒加载设置</span>
+<span class="token key atrule">lazyload</span><span class="token punctuation">:</span>
+  <span class="token comment">### 是否启用懒加载</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment">### 指定加载时的占位图片</span>
+  <span class="token key atrule">loading_img</span><span class="token punctuation">:</span> /img/loadings.gif
+  <span class="token comment">### 为 true 时，懒加载仅在文章页生效，如果自定义页面需要使用，可以在 Front-matter (opens new window)里指定</span>
+  <span class="token key atrule">onlypost</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment">### 触发加载的偏移倍数，基数是视窗高度（即提前 N 屏高度触发加载），可根据部署环境的请求速度调节</span>
+  <span class="token key atrule">offset_factor</span><span class="token punctuation">:</span> <span class="token number">2</span>
+ 
+<span class="token comment">## 全局字体设置</span>
+<span class="token key atrule">font</span><span class="token punctuation">:</span>  
+  <span class="token comment">### 全局字号</span>
+  <span class="token key atrule">font_size</span><span class="token punctuation">:</span> 16px
+  <span class="token comment">### 全局字体族</span>
+  <span class="token comment"># font_family: "Microsoft YaHei"</span>
+  <span class="token key atrule">font_family</span><span class="token punctuation">:</span> cursive
+  <span class="token comment">### 代码字号</span>
+  <span class="token key atrule">code_font_size</span><span class="token punctuation">:</span> 85%
+  
+<span class="token comment">## 网页访问统计</span>
+<span class="token key atrule">web_analytics</span><span class="token punctuation">:</span> 
+  <span class="token comment">### 默认为false，启用网页统计改为true即可</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment">### 百度统计的Key，参见 https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376 代码获取中 hm.js? 后边的字符串</span>
+  <span class="token key atrule">baidu</span><span class="token punctuation">:</span> <span class="token string">"b03373c2e14581acbc0f537ef1c1d05a"</span>
+  <span class="token comment">### Google统计的Tracking ID，参见 https://analytics.google.com/analytics/web/  </span>
+  <span class="token key atrule">google</span><span class="token punctuation">:</span>
+  <span class="token comment">### 腾讯统计的H5 App id，参见 https://mta.qq.com/h5/manage/ctr_app_manage (开启高级功能才有cid)</span>
+  <span class="token key atrule">tencent</span><span class="token punctuation">:</span>
+    <span class="token key atrule">sid</span><span class="token punctuation">:</span>
+    <span class="token key atrule">cid</span><span class="token punctuation">:</span>
+  <span class="token comment">### 51.la站点统计ID，参见 https://www.51.la/user/site/index</span>
+  <span class="token key atrule">woyaola</span><span class="token punctuation">:</span> <span class="token string">"21899037"</span>
+  <span class="token comment">### 友盟/cnzz站点统计web_id，参见 https://web.umeng.com/main.php?c=site&amp;a=show</span>
+  <span class="token key atrule">cnzz</span><span class="token punctuation">:</span>
+  <span class="token comment">### LeanCloud 计数统计，可用于 PV UV 展示，如果 web_analytics.enable 没有开启，PV UV 展示只会查询，不会增加</span>
+  <span class="token key atrule">leancloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app_id</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app_key</span><span class="token punctuation">:</span>
+    <span class="token comment">#### REST API 服务器地址，国际版不填</span>
+    <span class="token key atrule">server_url</span><span class="token punctuation">:</span>
+
+<span class="token comment">## 底部栏设置</span>
+<span class="token key atrule">footer</span><span class="token punctuation">:</span>
+  <span class="token comment">### 统计访问人数设置</span>
+  <span class="token key atrule">statistics</span><span class="token punctuation">:</span>
+    <span class="token comment">#### 是否开启访问人数统计</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment">#### 可选 leancloud | busuanzi  根据自己需求选择</span>
+    <span class="token key atrule">source</span><span class="token punctuation">:</span> <span class="token string">"leancloud"</span>
+    <span class="token comment">#### 显示的文本，&#123;&#125;是数字的占位符（必须包含)，下同</span>
+    <span class="token key atrule">pv_format</span><span class="token punctuation">:</span> <span class="token string">"总访问量 &#123;&#125; 次"</span>
+    <span class="token key atrule">uv_format</span><span class="token punctuation">:</span> <span class="token string">"总访客数 &#123;&#125; 人"</span>
+    
+<span class="token comment">## OpenGraph设置</span>
+<span class="token key atrule">open_graph</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">twitter_card</span><span class="token punctuation">:</span> summary_large_image
+  <span class="token key atrule">twitter_id</span><span class="token punctuation">:</span>
+  <span class="token key atrule">twitter_site</span><span class="token punctuation">:</span>
+  <span class="token key atrule">google_plus</span><span class="token punctuation">:</span>
+  <span class="token key atrule">fb_admins</span><span class="token punctuation">:</span>
+  <span class="token key atrule">fb_app_id</span><span class="token punctuation">:</span>
+  
+<span class="token comment"># ==================================== 首页设置 ====================================</span>
+<span class="token key atrule">index</span><span class="token punctuation">:</span>
+  <span class="token comment">## 打字机设置</span>
+  <span class="token key atrule">slogan</span><span class="token punctuation">:</span>
+    <span class="token comment">### 是否启用打字机</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment">### 打字机文字内容</span>
+    <span class="token key atrule">text</span><span class="token punctuation">:</span> 生命不息，折腾不止
+    <span class="token key atrule">api</span><span class="token punctuation">:</span>
+      <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://v1.hitokoto.cn/"</span>
+      <span class="token key atrule">method</span><span class="token punctuation">:</span> <span class="token string">"GET"</span>
+      <span class="token key atrule">headers</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+      <span class="token key atrule">keys</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"hitokoto"</span><span class="token punctuation">]</span>
+  <span class="token comment">## 文章跳转方式 _blank：新标签页打开  _self：当前标签页打开</span>
+  <span class="token key atrule">post_url_target</span><span class="token punctuation">:</span> _self
+  <span class="token comment">## 文章信息设置：可配置隐藏包括发布时间、分类、标签</span>
+  <span class="token key atrule">post_meta</span><span class="token punctuation">:</span>
+    <span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">category</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">tag</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    
+<span class="token comment"># ==================================== 文章页设置 ====================================</span>
+<span class="token key atrule">post</span><span class="token punctuation">:</span>
+  <span class="token comment">## 统一给文章设置一个默认封面</span>
+  <span class="token key atrule">default_index_img</span><span class="token punctuation">:</span> /img/thumb.jpg
+  <span class="token comment">## 日期/字数/阅读时长/阅读数 设置</span>
+  <span class="token key atrule">meta</span><span class="token punctuation">:</span>
+    <span class="token key atrule">author</span><span class="token punctuation">:</span>  <span class="token comment"># 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值</span>
+      <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">date</span><span class="token punctuation">:</span>  <span class="token comment"># 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期</span>
+      <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">" YYYY 年 MM 月 DD 日 , a hh:mm , dddd"</span>  <span class="token comment"># 格式参照 ISO-8601 日期格式化</span>
+    <span class="token key atrule">wordcount</span><span class="token punctuation">:</span>  <span class="token comment"># 字数统计</span>
+      <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">"&#123;&#125; 字"</span>  <span class="token comment"># 显示的文本，&#123;&#125;是数字的占位符（必须包含)，下同</span>
+    <span class="token key atrule">min2read</span><span class="token punctuation">:</span>  <span class="token comment"># 阅读时间</span>
+      <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">"&#123;&#125; 分钟"</span>
+    <span class="token key atrule">views</span><span class="token punctuation">:</span>  <span class="token comment"># 阅读次数</span>
+      <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token key atrule">source</span><span class="token punctuation">:</span> <span class="token string">"leancloud"</span>  <span class="token comment"># 统计数据来源，可选：leancloud | busuanzi   注意不蒜子会间歇抽风</span>
+      <span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">"&#123;&#125; 次"</span>
+  <span class="token comment">## 评论设置</span>
+  <span class="token key atrule">comments</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> valine
+
+<span class="token comment">## valine 评论设置</span>
+<span class="token key atrule">valine</span><span class="token punctuation">:</span>
+  <span class="token key atrule">appId</span><span class="token punctuation">:</span> 你的appId
+  <span class="token key atrule">appKey</span><span class="token punctuation">:</span> 你的appKey
+  <span class="token key atrule">serverURLs</span><span class="token punctuation">:</span> 你的serverURLs
+  <span class="token key atrule">placeholder</span><span class="token punctuation">:</span> 留言仅限讨论，禁止广告等行为
+
+      
+<span class="token comment"># ==================================== 代码块设置 ====================================</span>
+<span class="token key atrule">code</span><span class="token punctuation">:</span>
+  <span class="token comment">## 是否开启复制代码的按钮</span>
+  <span class="token key atrule">copy_btn</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment">## 高亮设置</span>
+  <span class="token key atrule">highlight</span><span class="token punctuation">:</span>
+    <span class="token comment">### 是否开启代码高亮</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment">### 是否开启行号</span>
+    <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment">### 选择生成高亮的库，可选项: highlightjs、prismjs，对应下面两组配置，高亮的配置说明具体见主题配置中的注释</span>
+    <span class="token key atrule">lib</span><span class="token punctuation">:</span> <span class="token string">"prismjs"</span>
+    <span class="token key atrule">highlightjs</span><span class="token punctuation">:</span>
+      <span class="token key atrule">style</span><span class="token punctuation">:</span> <span class="token string">'GitHub Gist'</span>
+      <span class="token key atrule">bg_color</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">prismjs</span><span class="token punctuation">:</span>
+      <span class="token key atrule">style</span><span class="token punctuation">:</span> <span class="token string">"default"</span>
+      <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+
+<p>配置完后，自己在本地看效果</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">hexo g    <span class="token comment">#生成静态页面</span>
+hexo s    <span class="token comment">#启动本地服务</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div></figure>
+
+<h3 id="四、上传到GitHub"><a href="#四、上传到GitHub" class="headerlink" title="四、上传到GitHub"></a>四、上传到GitHub</h3><p>1、安装<code>hexo-deployer-git</code> </p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install hexo-deployer-git <span class="token operator">--</span>save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+
+<p>2、修改<code>_config.yml</code>配置文件</p>
+<p>找到下面字段，修改成你自己的仓库地址</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> git
+  <span class="token key atrule">repo</span><span class="token punctuation">:</span> git@GitHub.com<span class="token punctuation">:</span>yqt5420/yqt5420.github.io.git    <span class="token comment">#自己的仓库地址</span>
+  <span class="token key atrule">branch</span><span class="token punctuation">:</span> main                                          <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+
+<p>3、上传到GitHub仓库</p>
+<p>确保你能正确通过SSH链接到GitHub，然后输入下面的命令将博客上传到GitHub</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-pow" data-language="pow"><code class="language-pow">hexo clean  
+hexo g           
+hexo d <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div></figure>
+
+<p>部署完成，在本地写完文章，运行上面的命令上传一下就行了。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Hexo+GitHub-免费托管私人博客</div>
+      <div>https://yqt5420.github.io/2024/07/18/Hexo静态博客搭建教程/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>AW</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>2024年7月18日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/07/17/Scoop%EF%BC%9A%E5%BC%80%E6%BA%90%E7%9A%84Windows%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" title="Scoop：开源的Windows包管理工具">
+                        <span class="hidden-mobile">Scoop：开源的Windows包管理工具</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/love.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxingxing.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxuehua.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
