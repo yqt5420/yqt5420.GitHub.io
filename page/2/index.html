@@ -19,8 +19,8 @@
   <meta name="keywords" content="">
   
     <meta property="og:type" content="website">
-<meta property="og:title" content="Tags - 科普">
-<meta property="og:url" content="https://szsc.asia/tags/%E7%A7%91%E6%99%AE/index.html">
+<meta property="og:title" content="阿伟の折腾笔记">
+<meta property="og:url" content="https://szsc.asia/page/2/index.html">
 <meta property="og:site_name" content="阿伟の折腾笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="AW">
@@ -30,7 +30,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Tags - 科普 - 阿伟の折腾笔记</title>
+  <title>阿伟の折腾笔记</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -123,7 +123,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 80vh;">
+<div class="header-inner" style="height: 100vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -251,13 +251,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/back.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Tags - 科普"></span>
+            <span id="subtitle" data-typed-text="生命不息，折腾不止"></span>
           
         </div>
 
@@ -281,42 +281,69 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          >
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">3 posts in total</p>
-  <hr>
-  
-  
+
+  <div class="row mx-auto index-card">
     
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/07/17/scoop-kai-yuan-de-windows-bao-guan-li-gong-ju/" target="_self">
+          <img src="/img/thumb.jpg" srcset="/img/loadings.gif" lazyload alt="Scoop：开源的Windows包管理工具">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/17/scoop-kai-yuan-de-windows-bao-guan-li-gong-ju/" target="_self">
+          Scoop：开源的Windows包管理工具
+        </a>
+      </h2>
+
       
-      <p class="h5">2024</p>
-    
-    <a href="/2024/07/29/luo-ci-zhen-kong-beng/" class="list-group-item list-group-item-action">
-      <time>07-29</time>
-      <div class="list-group-item-title">罗茨真空泵</div>
-    </a>
-  
-    
-    <a href="/2024/07/26/da-yin-zhi-dui-cai-liao-biao-mian-xing-neng-de-ying-xiang/" class="list-group-item list-group-item-action">
-      <time>07-26</time>
-      <div class="list-group-item-title">表面张力对材料表面性能的影响</div>
-    </a>
-  
-    
-    <a href="/2024/07/25/zhen-kong-beng-fen-lei/" class="list-group-item list-group-item-action">
-      <time>07-25</time>
-      <div class="list-group-item-title">真空泵分类</div>
-    </a>
-  
-</div>
+      <a class="index-excerpt " href="/2024/07/17/scoop-kai-yuan-de-windows-bao-guan-li-gong-ju/" target="_self">
+        <div>
+          Scoop包管理工具安装过程  一、安装： github地址：Scoop 1、方法一 1.1 设定用户安装目录（通过Scoop安装的软件存放的位置），这里设置 E:\Scoop $env:SCOOP='E:\Scoop'  [Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')  1.2 保证自己与github的网络连
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-17 10:00" pubdate>
+              2024-07-17
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Windows/">#Windows</a>
+            
+              <a href="/tags/Scoop/">#Scoop</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
 
 
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
 
 
 
@@ -428,7 +455,37 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        typing(text);
+        jQuery.ajax({
+          type: 'GET',
+          url: 'https://v1.hitokoto.cn/',
+          headers: {},
+          dataType: 'json',
+          success: function(result) {
+            var apiText;
+            if (result) {
+              var keys = 'hitokoto'.split(',');
+              if (result instanceof Array) {
+                result = result[0];
+              }
+              for (const k of keys) {
+                var value = result[k];
+                if (typeof value === 'string') {
+                  apiText = value;
+                  break;
+                } else if (value instanceof Object) {
+                  result = value;
+                }
+              }
+            }
+            apiText ? typing(apiText) : typing(text);
+          },
+          error: function(xhr, status, error) {
+            if (error) {
+              console.error('Failed to request https://v1.hitokoto.cn/:', error);
+            }
+            typing(text);
+          }
+        })
       
     })(window, document);
   </script>

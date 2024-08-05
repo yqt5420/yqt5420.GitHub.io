@@ -18,28 +18,37 @@
   <meta name="author" content="AW">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一、基本概念  [!电容器] 两个相互靠近的导体，中间夹一层不导电的绝缘介质，这就构成了电容器。 当电容器的两个极板之间加上电压时，电容器就会储存电荷。   [!击穿电压] 任何物质都是相对绝缘的，当物质两端的电压加大到一定程度后，物质都是可以导电的，我们称这个电压为击穿电压   1. 最简单的电容器结构   最简单的电容器是由两端的极板和中间的绝缘电介质（包括空气）构成的。通电后，在不超过击穿">
+    <meta name="description" content="一、确定需要的数据，找到api接口地址 需要获取到在医保目录中的药品信息，访问地址  打开开发者工具，刷新页面，查看XHR请求数据。 发现api接口地址：https:&#x2F;&#x2F;fuwu.nhsa.gov.cn&#x2F;ebus&#x2F;fuwu&#x2F;api&#x2F;nthl&#x2F;api&#x2F;CommQuery&#x2F;queryWmTcmpatInfoBFromEs 请求数据和响应数据都是加密的。   二、搜索关键字，找到加密js代码位置  1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="什么是薄膜电容器">
-<meta property="og:url" content="https://szsc.asia/2024/07/24/shi-me-shi-bo-mo-dian-rong-qi/index.html">
+<meta property="og:title" content="记录一次js逆向某医保平台的过程">
+<meta property="og:url" content="https://szsc.asia/2024/07/26/ji-lu-yi-ci-js-ni-xiang-mou-yi-bao-ping-tai-de-guo-cheng/index.html">
 <meta property="og:site_name" content="阿伟の折腾笔记">
-<meta property="og:description" content="一、基本概念  [!电容器] 两个相互靠近的导体，中间夹一层不导电的绝缘介质，这就构成了电容器。 当电容器的两个极板之间加上电压时，电容器就会储存电荷。   [!击穿电压] 任何物质都是相对绝缘的，当物质两端的电压加大到一定程度后，物质都是可以导电的，我们称这个电压为击穿电压   1. 最简单的电容器结构   最简单的电容器是由两端的极板和中间的绝缘电介质（包括空气）构成的。通电后，在不超过击穿">
+<meta property="og:description" content="一、确定需要的数据，找到api接口地址 需要获取到在医保目录中的药品信息，访问地址  打开开发者工具，刷新页面，查看XHR请求数据。 发现api接口地址：https:&#x2F;&#x2F;fuwu.nhsa.gov.cn&#x2F;ebus&#x2F;fuwu&#x2F;api&#x2F;nthl&#x2F;api&#x2F;CommQuery&#x2F;queryWmTcmpatInfoBFromEs 请求数据和响应数据都是加密的。   二、搜索关键字，找到加密js代码位置  1">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2024/07/24/g5uXmSEavwG2kUQ.png">
-<meta property="og:image" content="https://s2.loli.net/2024/07/24/bjcS8NPiX2QBrIo.png">
-<meta property="og:image" content="https://s2.loli.net/2024/07/24/ENAd2TvJBpuy59e.png">
-<meta property="article:published_time" content="2024-07-24T00:13:05.000Z">
-<meta property="article:modified_time" content="2024-08-02T00:08:30.550Z">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805123029353.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805123620207.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805123958936.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805124903435.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805125052666.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805125358732.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805125553309.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805130108022.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805130723513.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805131040314.png">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805131714671.png">
+<meta property="article:published_time" content="2024-07-26T00:06:41.000Z">
+<meta property="article:modified_time" content="2024-08-05T05:17:54.100Z">
 <meta property="article:author" content="AW">
-<meta property="article:tag" content="工作，科普">
+<meta property="article:tag" content="爬虫">
+<meta property="article:tag" content="js逆向">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s2.loli.net/2024/07/24/g5uXmSEavwG2kUQ.png">
+<meta name="twitter:image" content="c:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805123029353.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>什么是薄膜电容器 - 阿伟の折腾笔记</title>
+  <title>记录一次js逆向某医保平台的过程 - 阿伟の折腾笔记</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -274,7 +283,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="什么是薄膜电容器"></span>
+            <span id="subtitle" data-typed-text="记录一次js逆向某医保平台的过程"></span>
           
         </div>
 
@@ -290,8 +299,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-07-24 08:13" pubdate>
-           2024 年 07 月 24 日 , 早上 08:13 , 星期三
+        <time datetime="2024-07-26 08:06" pubdate>
+           2024 年 07 月 26 日 , 早上 08:06 , 星期五
         </time>
       </span>
     
@@ -303,7 +312,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          502 字
+          414 字
         
       </span>
     
@@ -315,7 +324,7 @@
         
         
           <!-- compatible with older versions-->
-          5 分钟
+          4 分钟
         
       </span>
     
@@ -352,52 +361,43 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">什么是薄膜电容器</h1>
+            <h1 id="seo-header">记录一次js逆向某医保平台的过程</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="一-基本概念"><a class="markdownIt-Anchor" href="#一-基本概念"></a> 一、基本概念</h3>
-<blockquote>
-<p>[!电容器]<br />
-<strong>两个相互靠近的导体，中间夹一层不导电的绝缘介质</strong>，这就构成了电容器。<br />
-当电容器的两个极板之间加上电压时，电容器就会储存电荷。</p>
-</blockquote>
-<blockquote>
-<p>[!击穿电压]<br />
-任何物质都是<strong>相对绝缘</strong>的，当物质两端的电压加大到一定程度后，物质都是<mark>可以导电的</mark>，我们称这个电压为击穿电压</p>
-</blockquote>
-<h4 id="1-最简单的电容器结构"><a class="markdownIt-Anchor" href="#1-最简单的电容器结构"></a> 1. 最简单的电容器结构</h4>
-<ul>
-<li>
-<p>最简单的电容器是由两端的极板和中间的绝缘<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%94%B5%E4%BB%8B%E8%B4%A8/5419522?fromModule=lemma_inlink">电介质</a>（包括空气）构成的。通电后，在不超过击穿电压的条件下，极板带电，形成电压（电势差），但是由于中间的绝缘物质，所以整个电容器是不导电的。</p>
-</li>
-<li>
-<p>在<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%9B%B4%E6%B5%81%E7%94%B5%E8%B7%AF/1162083?fromModule=lemma_inlink">直流电路</a>中，电容器是相当于断路的。电容器是一种能够储藏电荷的元件，充当临时电池的角色。</p>
-<p><img src="https://s2.loli.net/2024/07/24/g5uXmSEavwG2kUQ.png" srcset="/img/loadings.gif" lazyload alt="电容器充电" /></p>
-</li>
-</ul>
-<h4 id="二-薄膜电容器"><a class="markdownIt-Anchor" href="#二-薄膜电容器"></a> 二、 薄膜电容器</h4>
-<ul>
-<li>薄膜电容器是一种以聚合物薄膜为电介质的电容器</li>
-<li>聚合物薄膜，普遍使用的是将内部电极蒸镀到薄膜上的金属化薄膜</li>
-</ul>
-<h5 id="21-按照结构分类"><a class="markdownIt-Anchor" href="#21-按照结构分类"></a> 2.1 按照结构分类</h5>
-<p>薄膜电容器的结构大致可分为<code>卷绕型</code>和<code>叠层型</code>两种</p>
-<ul>
-<li>
-<p><em><strong>卷绕型</strong></em>将聚合物薄膜卷绕并冲压成型，然后将其装入壳内；</p>
-</li>
-<li>
-<p>叠层型将多层聚合物叠加在一起，然后将叠层体装入壳内；<br />
-<img src="https://s2.loli.net/2024/07/24/bjcS8NPiX2QBrIo.png" srcset="/img/loadings.gif" lazyload alt="卷绕型和叠层型电容器结构" /></p>
-</li>
-</ul>
-<h5 id="22-金属化薄膜电容器"><a class="markdownIt-Anchor" href="#22-金属化薄膜电容器"></a> 2.2 金属化薄膜电容器</h5>
-<p>通常的薄膜电容器其制法是将铝等<em><strong>金属箔</strong></em>当成电极和<em><strong>塑料薄膜</strong></em><mark>重叠</mark>后卷绕在一起制成。<br />
-金属化薄膜(Metallized Film)，其制法是在塑料薄膜上，真空蒸镀一层很薄的金属以做为电极。<br />
-如此可以省去电极箔的厚度，缩小电容器单位容量的体积，所以薄膜电容器较容易做成小型，容量大的电容器。</p>
-<p><img src="https://s2.loli.net/2024/07/24/ENAd2TvJBpuy59e.png" srcset="/img/loadings.gif" lazyload alt="金属化薄膜电容器" /></p>
+                <h3 id="一-确定需要的数据找到api接口地址"><a class="markdownIt-Anchor" href="#一-确定需要的数据找到api接口地址"></a> 一、确定需要的数据，找到api接口地址</h3>
+<p>需要获取到在医保目录中的药品信息，访问<a target="_blank" rel="noopener" href="https://fuwu.nhsa.gov.cn/nationalHallSt/#/search/drug-directory?code=90000&amp;flag=false&amp;gbFlag=true">地址</a></p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805123029353.png" srcset="/img/loadings.gif" lazyload alt="药品信息" /></p>
+<p>打开开发者工具，刷新页面，查看XHR请求数据。</p>
+<p>发现api接口地址：<code>https://fuwu.nhsa.gov.cn/ebus/fuwu/api/nthl/api/CommQuery/queryWmTcmpatInfoBFromEs</code></p>
+<p>请求数据和响应数据都是加密的。</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805123620207.png" srcset="/img/loadings.gif" lazyload alt="image-20240805123620207" /></p>
+<h3 id="二-搜索关键字找到加密js代码位置"><a class="markdownIt-Anchor" href="#二-搜索关键字找到加密js代码位置"></a> 二、搜索关键字，找到加密js代码位置</h3>
+<h4 id="1-分析请求体数据"><a class="markdownIt-Anchor" href="#1-分析请求体数据"></a> 1、分析请求体数据</h4>
+<p>可以通过<code>apifox</code>模拟发送请求，然后修改请求字段，看是否能成功获取响应，进而得到服务器需要校验参数。</p>
+<p>请求的body被加密成<code>encData</code>，同时校验<code>signData</code>才能成功请求。</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805123958936.png" srcset="/img/loadings.gif" lazyload alt="image-20240805123958936" /></p>
+<h3 id="2-打个xhr断点搜索关键字encdata"><a class="markdownIt-Anchor" href="#2-打个xhr断点搜索关键字encdata"></a> 2、打个xhr断点，搜索关键字<code>encData</code></h3>
+<p>找到类似赋值的代码，打上断点，重新调试。</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805124903435.png" srcset="/img/loadings.gif" lazyload alt="image-20240805124903435" /></p>
+<p>请求body藏在变量<code>e</code>中，往上找，发现<code>singData</code>的赋值代码，都放在<code>function f(t)</code> 这个函数中</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805125052666.png" srcset="/img/loadings.gif" lazyload alt="image-20240805125052666" /></p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805125358732.png" srcset="/img/loadings.gif" lazyload alt="image-20240805125358732" /></p>
+<p>这个函数又是在<code>7d92</code>这个模块中</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805125553309.png" srcset="/img/loadings.gif" lazyload alt="image-20240805125553309" /></p>
+<h2 id="三-扣加密模块补全js环境"><a class="markdownIt-Anchor" href="#三-扣加密模块补全js环境"></a> 三、扣加密模块，补全js环境</h2>
+<h3 id="1-找到webpack的触发器"><a class="markdownIt-Anchor" href="#1-找到webpack的触发器"></a> 1、找到webpack的触发器</h3>
+<p>拉到js代码的最开始的位置，将触发器的代码扣下来，自己重新构建一个触发器，然后将<code>7d92</code> 模块的代码放进去，函数<code>o</code>就是触发器。</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805130108022.png" srcset="/img/loadings.gif" lazyload alt="image-20240805130108022" /></p>
+<p>重写一个js模拟实现上面的功能</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805130723513.png" srcset="/img/loadings.gif" lazyload alt="image-20240805130723513" /></p>
+<h3 id="2-补全js代码"><a class="markdownIt-Anchor" href="#2-补全js代码"></a> 2、补全js代码</h3>
+<p>在控制台打印下<code>t</code>，发现具体传入的数据格式是一个字典对象。</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805131040314.png" srcset="/img/loadings.gif" lazyload alt="image-20240805131040314" /></p>
+<p>构建一个假数据传入到，刚才新定义的<code>data_encrypt</code>中，<code>data_encrypt.a</code>方法是加密，<code>data_encrypt.b</code>方法是解密，假数据的数据结构如下：</p>
+<p><img src="C:/Users/Administrator/Desktop/blog/source/_posts/assets/image-20240805131714671.png" srcset="/img/loadings.gif" lazyload alt="image-20240805131714671" /></p>
+<p>然后运行，看报错，缺啥模块补啥模块就行了。</p>
 
                 
               </div>
@@ -410,7 +410,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%B7%A5%E4%BD%9C%EF%BC%8C%E7%A7%91%E6%99%AE/" class="print-no-link">#工作，科普</a>
+        <a href="/tags/%E7%88%AC%E8%99%AB/" class="print-no-link">#爬虫</a>
+      
+        <a href="/tags/js%E9%80%86%E5%90%91/" class="print-no-link">#js逆向</a>
       
     </div>
   
@@ -422,8 +424,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>什么是薄膜电容器</div>
-      <div>https://szsc.asia/2024/07/24/shi-me-shi-bo-mo-dian-rong-qi/</div>
+      <div>记录一次js逆向某医保平台的过程</div>
+      <div>https://szsc.asia/2024/07/26/ji-lu-yi-ci-js-ni-xiang-mou-yi-bao-ping-tai-de-guo-cheng/</div>
     </div>
     <div class="license-meta">
       
@@ -435,7 +437,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>2024年7月24日</div>
+          <div>2024年7月26日</div>
         </div>
       
       
@@ -467,9 +469,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/07/25/zhen-kong-beng-fen-lei/" title="真空泵分类">
+                      <a href="/2024/07/26/arch-an-zhuang-xiao-jie/" title="Arch安装小结">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">真空泵分类</span>
+                        <span class="hidden-mobile">Arch安装小结</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -477,8 +479,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/07/24/tong-guo-ssh-mi-yao-lian-jie-fu-wu-qi/" title="通过SSH密钥连接服务器">
-                        <span class="hidden-mobile">通过SSH密钥连接服务器</span>
+                      <a href="/2024/07/25/zhen-kong-beng-fen-lei/" title="真空泵分类">
+                        <span class="hidden-mobile">真空泵分类</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
