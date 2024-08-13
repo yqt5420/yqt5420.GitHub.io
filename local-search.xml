@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>磁控溅射系统详解</title>
+    <link href="/2024/08/14/ci-kong-jian-she-xi-tong-xiang-jie/"/>
+    <url>/2024/08/14/ci-kong-jian-she-xi-tong-xiang-jie/</url>
+    
+    <content type="html"><![CDATA[<h2 id="常见名词解释"><a class="markdownIt-Anchor" href="#常见名词解释"></a> 常见名词解释</h2><h3 id="一-电极和电源"><a class="markdownIt-Anchor" href="#一-电极和电源"></a> 一、电极和电源</h3><h4 id="惰性电极和活性电极"><a class="markdownIt-Anchor" href="#惰性电极和活性电极"></a> 惰性电极和活性电极</h4><ul><li><p>惰性电极：是指<mark>不易得失电子</mark>的，一般不与电解液反应的电极。由铂、金或碳等惰性材料与含有可溶性的氧化态和还原态物质的溶液组成。</p></li><li><p>活性电极：也就是活泼电极，主要是指<a href="https://baike.baidu.com/item/%E9%87%91%E5%B1%9E%E6%B4%BB%E5%8A%A8%E6%80%A7%E9%A1%BA%E5%BA%8F%E8%A1%A8/386569?fromModule=lemma_inlink">金属活动性顺序表</a>中排在Pt前的金属(K、Ca、Na)除外的金属单质，常考的有：Fe Cu Ag等，当阳极为活性电极时，电极本身失电子，参加反应，质量减少</p><blockquote><p><strong>金属活动性顺序表口诀：钾，钙，钠，镁，铝；锌，铁，锡，铅，氢；铜，汞，银，铂，金。活泼性从高到低排列。</strong></p></blockquote><blockquote><p>阳极：化学电池中，能使电解质发生氧化反应的电极称为阳极 。此外，<em><strong>在电子管中用来接收或加速从阴极发射的电子的电极也叫阳极</strong></em> 。</p></blockquote></li></ul><h4 id="电源"><a class="markdownIt-Anchor" href="#电源"></a> 电源</h4><ol><li><p><strong>脉冲电源</strong>：这是一种可以输出周期性脉冲电流的电源，它可以是交流（AC）或直流（DC）的形式。脉冲电源通常用于特定的应用，如电镀、焊接或测试设备，以提供高能量的短暂脉冲。</p></li><li><p><strong>交流电源（AC Power Supply）</strong>：指的是提供交流电能的电源，其电压和电流随时间周期性变化。交流电源是最常见的电源形式，广泛应用于家庭和工业。</p></li><li><p><strong>直流电源（DC Power Supply）</strong>：提供直流电能的电源，其电压和电流在稳定状态下是恒定的。直流电源常用于为电子设备供电。</p></li><li><p><strong>脉冲直流电源（Pulsed DC Power Supply）</strong>：这是一种特殊类型的直流电源，它可以输出周期性的直流脉冲，而不是连续的直流电。脉冲直流电源通常用于测试和模拟电子设备在脉冲负载条件下的性能。</p></li><li><p><strong>脉冲交流电源（Pulsed AC Power Supply）</strong>：与脉冲直流电源类似，这种电源输出的是周期性的交流脉冲，而不是连续的交流电。脉冲交流电源在某些特定的测试和应用中使用，但不如脉冲直流电源常见。</p></li><li><p><strong>脉冲交流电源</strong>和<strong>脉冲直流电源</strong>是脉冲电源的两种形式，分别输出脉冲形式的交流电和直流电。</p></li></ol><p>总结来说，&quot;脉冲电源&quot;是一个总称，可以指代输出脉冲形式的交流或直流电源。而&quot;交流电源&quot;和&quot;直流电源&quot;通常指的是连续供电的电源。&quot;脉冲直流电源&quot;和&quot;脉冲交流电源&quot;是脉冲电源的子类别，分别对应脉冲形式的直流和交流电。</p><h3 id="二-辉光放电"><a class="markdownIt-Anchor" href="#二-辉光放电"></a> 二、辉光放电</h3><blockquote><p>辉光放电是一种在<strong>低气压</strong>（10mbar以下）气体中发生的气体放电现象，通常发生在真空管或气体放电管内。当<strong>两个电极之间的电压足够高</strong>（超过气体的击电压）时，<strong>气体分子会被电离</strong>，产生自由电子和离子。这些自由电子在电场的作用下加速，与气体分子碰撞，导致更多的电离事件，形成<strong>雪崩效应</strong>。这个过程会产生大量的光子，使得气体发光，因此称为辉光放电。</p></blockquote><h4 id="等离子体放电的伏安特性曲线"><a class="markdownIt-Anchor" href="#等离子体放电的伏安特性曲线"></a> 等离子体放电的伏安特性曲线</h4><p><img src="https://s2.loli.net/2024/08/13/xmQLwZuaAtlg495.jpg" alt="等离子体放电的伏安特性曲线" /></p><p>图中 A − E 区为暗放电区，电流始终很小；电压达到击穿电压后，会有一显著下降，随后进入辉光放电区，即图中 F ′ − H 区。在这段区域中，电流迅速增长，在 F ′ − G 区，电压不随电流增长；==随后在 G − H 区，电压与电流一同增长；==电压继续增长则会进入弧光放电区，放电电流极强。</p><p>磁控溅射中的辉光放电现象主要发生在 G - H 的异常辉光放电区。</p><blockquote><p>在实验室条件下，对于标准大气压（1 atm）和室温下的氩气，击穿电压大约在1000伏特左右，实际应用中，在低气压条件下（10mbar），氩气的击穿电压通常在几十到几百伏特的范围之间。</p></blockquote><h4 id="直流辉光放电"><a class="markdownIt-Anchor" href="#直流辉光放电"></a> 直流辉光放电</h4><p>①在阴-阳极之间加上直流电压，腔体内工作气体中剩余的电子和离子在电场的作用下进行定向运动，故电流会从零开始增加；</p><p>②当电极间电压足够大时，所有的带电离子都可以到达相应的电极，此时电流达到最大值。</p><p>③继续提高电压，当电极间电压超过气体<em><strong>击穿电压</strong></em>时，放电电流会迅速上升（电子雪崩效应），工作气体被击穿电离并产生等离子体，并进行自持辉光放电。</p><p>④磁控靶的阴极接靶材电源的负极，磁控溅射阳极接靶材电源的正极，当进行正常溅射时，一定是在等离子体放电伏安特性曲线中的“异常辉光放电区”，特点是：随着调节电源输出的磁控靶工作电压的增加，溅射电流也同步缓慢上升。</p><h4 id="脉冲直流辉光放电"><a class="markdownIt-Anchor" href="#脉冲直流辉光放电"></a> 脉冲直流辉光放电</h4><ul><li>在<strong>单个脉冲周期</strong>内，溅射系统中等离子体放电与<strong>直流工作条件</strong>下的等离子放电伏安特性曲线变化趋势一致；</li><li>脉冲直流靶电源在脉冲期间起辉溅射，在脉冲间隙自然灭辉（因频率较高，肉眼难以分辨）</li><li>P_<sub>平均</sub>_ = P_<sub>脉冲</sub>_  ·  ( W  · f ) ，<code>W</code>是<strong>脉冲宽度</strong>，<code>f</code>是电源频率，如果脉冲宽度增加，而频率保持不变，占空比增加，从而平均功率也会增加。同样，如果频率增加，脉冲宽度保持不变，占空比也会增加，导致平均功率增加。反之，如果脉冲宽度或频率减少，平均功率也会减少。</li></ul><h4 id="交流辉光放电"><a class="markdownIt-Anchor" href="#交流辉光放电"></a> 交流辉光放电</h4><p>pass</p><p>参考资料：<a href="http://www.chvacuum.com/application/sputter-coating/112680.html">点我</a></p><p>用于磁控溅射气体放电的交流电源主要有双极性脉冲（矩形波或正弦波）中频靶电源与射频靶电源。</p><h2 id="磁控溅射系统"><a class="markdownIt-Anchor" href="#磁控溅射系统"></a> 磁控溅射系统</h2><p>磁控溅射的工作原理是指电子在电场E的作用下，在飞向基片过程中与Ar原子发生碰撞，使得其电离并产生出AR<sup>+</sup>离子和新的电子，新电子飞向基片，Ar<sup>+</sup>在电场的作用下飞速飞向阴极靶材，并以高能量轰击靶面，使靶材发生溅射。</p><p>在溅射粒子中，中性的靶原子（分子）沉积在基片上形成薄膜，而产生的二次电子会受到电场和磁场的作用，产生E（电场）x B（磁场）所指方向漂移，其运动轨迹近似于一条摆线。在环形磁场中，<strong>二次电子在靶表面以近似摆线的形式在靶表面做圆周运动</strong>，特点是运动路径长，且被<em><strong>束缚在靠近靶表面的等离子体区域内</strong></em>，并在该区域内<em><strong>电离出大量的Ar<sup>+</sup>来轰击靶材</strong></em>，从而实现高的沉积速率。最后随着碰撞次数的增加，二次电子的能量被耗尽（变成低能粒子），逐渐远离靶面，并最终在电场的作用下沉积在基片上，<em><strong>由于能量很低，传递给基片的能量很小，所以基片升温较低</strong></em>。</p><p><img src="https://s2.loli.net/2024/08/13/xd24KR5rqDyz3Sb.png" alt="磁控溅射工作原理图" /></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>工作</tag>
+      
+      <tag>磁控溅射</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>记录一次js逆向某医保平台的过程</title>
     <link href="/2024/08/02/ji-lu-yi-ci-js-ni-xiang-mou-yi-bao-ping-tai-de-guo-cheng/"/>
     <url>/2024/08/02/ji-lu-yi-ci-js-ni-xiang-mou-yi-bao-ping-tai-de-guo-cheng/</url>
